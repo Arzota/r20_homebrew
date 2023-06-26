@@ -1,1 +1,1025 @@
---placeholder--
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "IntoWonderland",
+				"abbreviation": "IW",
+				"full": "Into Wonderland",
+				"url": "",
+				"authors": [
+					"Wiliam Rotor"
+				],
+				"convertedBy": [],
+				"color": "#800080"
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "Babble",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You inflict a curse of uncontrollable bouts of gibberish. Choose a humanoid or fey that you can see within range. The target must succeed on a Wisdom saving throw or babble incoherently for the duration. While babbling, the target can't speak, make bite attacks, use breath weapons, or use spells that require a vocal component. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends for the target."
+			],
+			"source": "IntoWonderland",
+			"uniqueId": "c5e007b7-a933-4b23-8aa0-0dd8bef570d3",
+			"page": 94,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a weasel's tongue"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you can target one additional humanoid or fey for each slot level above 3rd. The humanoids or fey must be within 30 feet of each other when you target them"
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"uniqueId": "3f74d8e0-0c01-44a5-8863-90d7ce5e876e",
+			"name": "Coin Toss",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You enchant a coin and flip it. The coin hovers and spins for a split second, then darts towards a creature you can see within range, bursting on impact with a flash of energy. Make a ranged spell attack roll against the target. On a hit, roll a {@dice d2}. The target takes 1 force damage on a roll of 1 and 8 force damage on a roll of 2"
+			],
+			"source": "IntoWonderland",
+			"page": 94,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a coin, which the spell consumes",
+					"consume": true
+				}
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases either by 1 on a roll of 1 or by 8 on a roll of 2 when you reach 5th level (2, 16), 11th level (3, 24), and 17th level (4, 32)"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"uniqueId": "d5d110c2-2b41-4b3f-a62b-2dad2f1a33a7",
+			"name": "Despair",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You remind your target of the hopelessness of existence. Choose a humanoid or fey that you can see within range. The target must succeed on a Charisma saving throw or become despondent. A creature with 5 or less Intelligence or that is immune to being {@condition charmed} automatically succeeds on this saving throw. While despondent, the target is {@condition incapacitated}, it automatically fails any ability checks or saving throws made to resist being {@condition grappled} or {@condition restrained}, and attack rolls have advantage against it. At the end of each of the target's turns or when the target takes damage, it can make another Charisma saving throw. On a success, the spell ends for the target."
+			],
+			"source": "IntoWonderland",
+			"page": 94,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the skull of a Tiny beast"
+			},
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you can target one additional humanoid or fey for each slot level above 4th. The humanoids or fey must be within 30 feet of each other when you target them."
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			]
+		},
+		{
+			"uniqueId": "d15415f3-3c2e-4f3b-8d3a-85ed33364645",
+			"name": "Discord",
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You cause infighting amidst your enemies' ranks. Choose a point within range. Each creature of your choice within a 20 foot radius of that point must succeed on an Wisdom saving throw or become {@condition charmed} by you. While {@condition charmed}, each target must use its action on its turn to make a melee weapon attack against an ally within reach. The target will move up to its speed to get in reach of one of its allies if it is safe to do so. At the end of each of the target's turns or when the target takes damage, it can make another Wisdom saving throw. On a success, the target is no longer {@condition charmed}."
+			],
+			"source": "IntoWonderland",
+			"page": 94,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a bouquet of flowers thrown high in the air, which the spell consumes",
+					"consume": true
+				}
+			},
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"uniqueId": "a63e313e-8222-4c9b-b2b1-f7a46c8b5733",
+			"name": "Euphoria",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You breathe a puff of sweet-smelling, dizzying gas like that of a faerie dragon. Each creature in a 15-foot cone originating from you must make a Wisdom saving throw. On a failed save, roll on the Euphoria Breath Effect table. The target must act accordingly on its next turn.",
+				{
+					"type": "table",
+					"caption": "Euphoria Breath Effects",
+					"colLabels": [
+						"{@dice d6}",
+						"Effect"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 1
+								}
+							},
+							"The target takes no action or bonus action and uses all of its movement to move in a random direction."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 2
+								}
+							},
+							"The target uses all of its movement to move in a random direction. It can otherwise act normally."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 3
+								}
+							},
+							"The target drops {@condition prone} and immediately ends its turn."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 4
+								}
+							},
+							"The target drops takes the Dodge action and immediately ends its turn."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 5
+								}
+							},
+							"The target can act normally, but all its attack rolls are made with disadvantage and all saving throws against its spells and effects are made with advantage."
+						],
+						[
+							{
+								"type": "cell",
+								"roll": {
+									"exact": 6
+								}
+							},
+							"The target behaves normally."
+						]
+					]
+				}
+			],
+			"source": "IntoWonderland",
+			"page": 94,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an expanded balloon"
+			},
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"MT",
+				"N"
+			]
+		},
+		{
+			"uniqueId": "89a2016a-229a-4a3c-a88a-a67628c0afc1",
+			"name": "Extract Dream",
+			"level": 5,
+			"school": "D",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You extract the ectoplasmic energy of dreams by laying your hands upon a sleeping humanoid or fey. The target makes a Charisma saving throw. On a failed save, the target's dreams, if it has any, appear in a hazy bubble above its head. The dreams are, by nature, meaningful only to the dreamer. A person viewing the dream in this way can make a DC 20 Wisdom (Insight) check to fathom the meaning of the dream, learning a secret about the dreamer on a success.",
+				"If the dreamer is being targeted by the spell dream, a representation of its nightmares materializes as a living nightmare, such as a terrible monster, the caster of dream, or even the dreamer themselves. The living nightmare is any CR 4 or higher creature with the following changes.",
+				{
+					"type": "list",
+					"items": [
+						"Its hit points are halved.",
+						"Its type is abberation.",
+						"It has resistance to bludgeoning, piercing, and slashing damage, and it has immunity to necrotic and poison damage.",
+						"It has the incorporeal trait of a ghost (MM 147).",
+						"It can't move further than 30 feet from the dreamer.",
+						"If the dreamer dies or is no longer {@condition unconscious}, the living nightmare disappears.",
+						"If the living nightmare dies, the dreamer can sleep more soundly fort a while. If the same caster of dream attempts to cast it again on the dreamer in the next 42 ({@dice 4d20}) days, the spell fails."
+					]
+				}
+			],
+			"source": "IntoWonderland",
+			"page": 95,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a spinning top"
+			},
+			"meta": {
+				"ritual": true
+			},
+			"abilityCheck": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"uniqueId": "220d52c3-2b15-42d7-8ceb-fddd4e15cb1a",
+			"name": "Knight's Hop",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You move a creature as though they were a knight on a dragon's chess board. Make a melee spell attack against a Medium or smaller creature within range. On a hit, you move the target in a straight line 10 feet in any direction and then 5 feet in a perpendicular direction, as long as there is space to do so. You can choose to move the target 5 feet and then 10 feet perpendicular instead. Against a willing target, you don't need to hit them with a melee spell attack, you just need to touch them"
+			],
+			"source": "IntoWonderland",
+			"page": 95,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small carved figure of a horse"
+			},
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"uniqueId": "cd945e7e-e8c2-4e78-be4c-e591fb64eceb",
+			"name": "Mouse",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You animate an object with the speed and timidness of a mouse. Choose an Tiny object within range. The target grows four little furry legs and becomes an animated mouse (IW 95) for the duration, immediately rolling initiative and attempting to escape to a hiding spot. It sees all other creatures as deadly threats, including you. The effects end if the animated mouse is reduced to 0 hit points (which destroys the object) or if a creature can see the animated mouse when the spell ends. Otherwise, it remains an animated mouse indefinitely"
+			],
+			"source": "IntoWonderland",
+			"page": 95,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a little winding handle"
+			}
+		},
+		{
+			"uniqueId": "23857878-8e18-4f82-8dd9-c67648689d96",
+			"name": "Our Little Secret",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You and each willing humanoid or fey touching you when the spell is cast can speak, read, and write Thieves' Cant for the duration. If no willing creature is touching you, the spell fails."
+			],
+			"source": "IntoWonderland",
+			"page": 95,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a novel marked with certain passages suspiciously marked"
+			},
+			"meta": {
+				"ritual": true
+			},
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"uniqueId": "d1c2ff3e-9713-432d-8935-4f79b0c00de9",
+			"name": "Rainbow",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A swathe of multicolored radiance springs forth from your glimmering chest. Choose a creature within range and make a ranged spell attack against it. On a hit, you deal {@damage 1d12} damage of each of the following types, for a total of {@damage 7d10} damage: radiant, fire, lightning, acid, cold, thunder, and force. You also learn if the target has any vulnerabilities, resistances, or immunities to any of these damage types."
+			],
+			"source": "IntoWonderland",
+			"page": 96,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an inverted crystal pyramid"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level, 7th level, or 8th level, you can add {@damage 1d10} damage of an additional damage type for each slot level above 5th. You can choose from the following additional damage types: necrotic, poison, and psychic. When you cast this spell at 9th level, you instead roll additional damage equal to {@dice 1d10} poison, {@dice 1d10} psychic, {@dice 1d10} necrotic, {@dice 2d10} force, and {@dice 2d10} radiant"
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"uniqueId": "0b565037-2bd8-4a74-847f-2881201880d2",
+			"name": "Reflect",
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"In response to a caster you can see within range targeting you with a single-target spell, you can attempt to reflect the spell. A reflected spell targets the caster of the spell as though it originated from you, if possible, and it uses your spell save DC or spell attack bonus, if relevant. The original caster has advantage on any saving throw it must make. You can reflect a spell even if it isn't a spell you know.",
+				"If the target is casting a cantrip or a 1st-level spell, you reflect the spell without needing to make an ability check. If the target is casting a spell of 2nd level or higher (up to 5th level) make an ability check using your spellcasting ability. The DC equals 14 + the spellʼs level. On a success, the creatureʼs spell is reflected. You can't reflect spells of 6th level or higher."
+			],
+			"source": "IntoWonderland",
+			"page": 96,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a silver mirror"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, you reflect the spell if its level is less than or equal to five levels below the spell slot you used. For example, casting reflect at 8th level allows you to reflect spells of 3rd level or lower without needing to make an ability check."
+					]
+				}
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"uniqueId": "58bd4c5f-750e-4cb4-9954-20725f25a398",
+			"name": "Return to Earth",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"The earth calls for all manner of creature to coalesce back into its dark soil. Choose a creature within range. At the end of each of its turns until the spell ends, the target must succeed on a Strength saving throw or be knocked {@condition prone} if it is within range and it is standing on natural ground."
+			],
+			"source": "IntoWonderland",
+			"page": 96,
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "dirt from a grave"
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"uniqueId": "ce73c292-fdc4-450f-9327-95d07c6cc69b",
+			"name": "Tormentor",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You torment your enemy with jests and mockery. Choose a creature within range. An illusory floating mouth appears and follows the target. The mouth criticizes, harangues, insults,and berates the target in its native tongue. As a bonus action and as part of casting this spell, you can use the mouth to cast vicious mockery on the target, dealing {@damage 4d4} psychic damage on a failed save (regardless of your level). You can't cast {@spell vicious mockery} twice in the same round using this spell, and you must fulfill the requirements to cast it, using the mouth for verbal components. If the target dies, you can use your bonus action to move the mouth to a new target within range and use the mouth to cast {@spell vicious mockery} on the new target."
+			],
+			"source": "IntoWonderland",
+			"page": 96,
+			"components": {
+				"v": true
+			}
+		},
+		{
+			"uniqueId": "6cbe3357-ec3c-4f02-934b-120450e349d2",
+			"name": "Trick",
+			"level": 7,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You swap identities with a humanoid you can see within range that is within 1 size category of you. If the target is unwilling, it must make Charisma saving throw. On a success, the spell ends. On a failure, both you and the target teleport to each other's spaces, switching positions. You both become glamoured to look like each other and speak in each other's voices. The moment of change is not perceptible. To discern through the illusion, a suspicious creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC. The changes wrought by this spell fail to hold up to physical inspection.",
+				"A hag that knows this spell can cast it on two targets other than herself within range. Both targets must either be willing or have failed their saving throw for the change to take place"
+			],
+			"source": "IntoWonderland",
+			"page": 96,
+			"components": {
+				"s": true
+			}
+		}
+	],
+	"monster": [
+		{
+			"name": "Animated Mouse",
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"source": "IntoWonderland",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "1d4 - 1",
+				"average": 1
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 2,
+			"dex": 20,
+			"con": 9,
+			"int": 2,
+			"wis": 6,
+			"cha": 2,
+			"passive": 8,
+			"cr": "0",
+			"uniqueId": "e77e85d0-3618-477b-aae6-0fb62a068f2d",
+			"page": 95,
+			"skill": {
+				"stealth": "+7"
+			},
+			"action": [
+				{
+					"name": "Scurry",
+					"entries": [
+						"The animated mouse takes the Disengage and Hide actions. it can break them up with movement."
+					]
+				}
+			]
+		}
+	]
+}
