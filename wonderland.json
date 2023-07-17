@@ -11,6 +11,19 @@
 				],
 				"convertedBy": [],
 				"color": "#800080"
+			},
+			{
+				"json": "OutclassedNPCStatblockCompendium",
+				"abbreviation": "OCL",
+				"full": "Outclassed: NPC Statblock Compendium",
+				"url": "https://www.dmsguild.com/product/302037/OUTCLASSED-The-NPC-Statblock-Compendium",
+				"authors": [
+					"William Rotor"
+				],
+				"convertedBy": [
+					"--"
+				],
+				"color": "#ff8000"
 			}
 		]
 	},
@@ -1020,6 +1033,112 @@
 					]
 				}
 			]
+		},
+		{
+			"uniqueId": "fdb07056-3d13-4ed5-afd8-133a976154f6",
+			"name": "Herbalist",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(any race)"
+			},
+			"source": "OutclassedNPCStatblockCompendium",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 12",
+				"average": 66
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 17,
+			"cha": 11,
+			"passive": 15,
+			"cr": "1",
+			"page": 166,
+			"languages": [
+				"Druidic plus any one language"
+			],
+			"languageTags": [
+				"DU",
+				"X"
+			],
+			"skill": {
+				"nature": "+4",
+				"perception": "+7",
+				"survival": "+7"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Disarming Attack (1/Turn)",
+					"entries": [
+						"When the herbalist hits a creature with an attack from its {@item shortsword} or {@item shortbow}, it can choose to force the target to succeed on a {@dc 12} Strength saving throw or take an additional 3 ({@damage 1d6}) piercing damage from the attack and drop an object it is holding of the herbalist's choice. The object lands at its feet."
+					]
+				},
+				{
+					"name": "Poisoned Weapons",
+					"entries": [
+						"The herbalist's weapon attacks deal an extra 7 ({@damage 2d6}) poison damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Poultice (3/Day)",
+					"entries": [
+						"The herbalist spends 1 minute to apply a poultice to a wounded creature. That creature regains 14 ({@dice 4d6}) hit points. Alternatively, it can use its ability to cure the creature of one poison afflicting it."
+					]
+				}
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit +4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"fluff": {
+				"entries": [
+					"Herbalists are nonmagical guardians of the natural land, whose expertise in gathering and brewing rare flora allows them to create delicious, healing concoctions. They're also deadly fighters, using natural poisons to augment their strikes.",
+					"This is a ranger with no spells (a.k.a a spell-less ranger), as proposed originally in an early Unearthed Arcana document."
+				]
+			}
 		}
 	]
 }
