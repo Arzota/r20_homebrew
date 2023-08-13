@@ -24,6 +24,15 @@
 					"--"
 				],
 				"color": "#ff8000"
+			},
+			{
+				"json": "PrincesBullshit",
+				"abbreviation": "PBS",
+				"full": "Prince's Bullshit",
+				"url": "",
+				"authors": [],
+				"convertedBy": [],
+				"color": "#fcf98d"
 			}
 		]
 	},
@@ -1036,109 +1045,110 @@
 		},
 		{
 			"uniqueId": "fdb07056-3d13-4ed5-afd8-133a976154f6",
-			"name": "Herbalist",
+			"name": "Darkwood Stalker",
 			"size": [
 				"M"
 			],
 			"type": {
-				"type": "humanoid",
+				"type": "fey",
 				"note": "(any race)"
 			},
-			"source": "OutclassedNPCStatblockCompendium",
+			"source": "IntoWonderland",
 			"alignment": [
-				"A"
+				"C",
+				"E"
 			],
 			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"{@item hide armor|phb}"
-					]
-				}
+				12
 			],
 			"hp": {
-				"formula": "12d8 + 12",
-				"average": 66
+				"formula": "13d8",
+				"average": 58
 			},
 			"speed": {
-				"walk": 30
+				"walk": 0,
+				"fly": 30
 			},
-			"str": 11,
-			"dex": 14,
-			"con": 12,
-			"int": 11,
-			"wis": 17,
-			"cha": 11,
-			"passive": 15,
-			"cr": "1",
-			"page": 166,
+			"str": 14,
+			"dex": 15,
+			"con": 11,
+			"int": 6,
+			"wis": 13,
+			"cha": 10,
+			"passive": 11,
+			"cr": "2",
+			"page": 214,
 			"languages": [
-				"Druidic plus any one language"
+				"Sylvan"
 			],
 			"languageTags": [
-				"DU",
-				"X"
+				"S"
 			],
-			"skill": {
-				"nature": "+4",
-				"perception": "+7",
-				"survival": "+7"
-			},
 			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"trait": [
+				"poison",
 				{
-					"name": "Disarming Attack (1/Turn)",
-					"entries": [
-						"When the herbalist hits a creature with an attack from its {@item shortsword} or {@item shortbow}, it can choose to force the target to succeed on a {@dc 12} Strength saving throw or take an additional 3 ({@damage 1d6}) piercing damage from the attack and drop an object it is holding of the herbalist's choice. The object lands at its feet."
-					]
-				},
-				{
-					"name": "Poisoned Weapons",
-					"entries": [
-						"The herbalist's weapon attacks deal an extra 7 ({@damage 2d6}) poison damage (included in the attack)."
-					]
-				},
-				{
-					"name": "Poultice (3/Day)",
-					"entries": [
-						"The herbalist spends 1 minute to apply a poultice to a wounded creature. That creature regains 14 ({@dice 4d6}) hit points. Alternatively, it can use its ability to cure the creature of one poison afflicting it."
-					]
+					"special": "bludgeoning, piercing, and slashing damage from nonsilvered weapons"
 				}
 			],
-			"damageTags": [
-				"I",
-				"P"
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
 			],
-			"action": [
+			"fluff": {
+				"entries": [
+					"Darkwood stalkers are lonely spirits who wear the hair they would have grown in life as a thick karatin mask shaped like the horns of a goat. A bright pink flame, their true form, propels them through the air, protected by magical purple tendrils that lick at the edges of the branches around them."
+				]
+			},
+			"shortName": "DS Stalker",
+			"trait": [
 				{
-					"name": "Shortsword",
+					"name": "Fey Demise",
 					"entries": [
-						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+						"If the darkwood stalker dies, its body disintegrates into a cloud of thick purple gas that heavily obscures vision in a 30-foot radius, lingering for {@dice 1d4} hours or until dispersed by a strong wind. A creature that starts its turn in the gas must succeed on a {@dc 12} Charisma saving throw or be transported to The Unknown (IW 65)."
 					]
 				},
 				{
-					"name": "Shortbow",
+					"name": "Variable Ilumination",
 					"entries": [
-						"{@atk rw} {@hit +4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+						"The darkwood stalker sheds bright light in a 5-20 foot radius and dim light for an additional number of feet equal to the chosen radius. The darkwood stalker can alter the radius or extinguish its light as a bonus action."
 					]
 				}
 			],
 			"miscTags": [
 				"MW",
 				"RW",
-				"RNG"
+				"AOE"
 			],
-			"fluff": {
-				"entries": [
-					"Herbalists are nonmagical guardians of the natural land, whose expertise in gathering and brewing rare flora allows them to create delicious, healing concoctions. They're also deadly fighters, using natural poisons to augment their strikes.",
-					"This is a ranger with no spells (a.k.a a spell-less ranger), as proposed originally in an early Unearthed Arcana document."
-				]
-			}
+			"action": [
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Flame Beam",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 60 ft., one target. {@h}15 ({@damage 2d12 + 2}) fire damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"tokenUrl": "https://cdnb.artstation.com/p/assets/images/images/017/921/845/large/anton-grundvall-dryx-hirez.jpg?1557856829",
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"savingThrowForced": [
+				"charisma"
+			]
 		}
 	]
 }
