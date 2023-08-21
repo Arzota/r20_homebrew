@@ -1149,6 +1149,133 @@
 			"savingThrowForced": [
 				"charisma"
 			]
+		},
+		{
+			"uniqueId": "e3a1b311-b9d7-4b7b-a827-6e5d29297fbb",
+			"name": "Gloom stalker",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(any race)"
+			},
+			"source": "OutclassedNPCStatblockCompendium",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 7",
+				"average": 38
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 13,
+			"int": 10,
+			"wis": 15,
+			"cha": 8,
+			"passive": 14,
+			"cr": "4",
+			"page": 165,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Undercommon plus any one language"
+			],
+			"languageTags": [
+				"U",
+				"X"
+			],
+			"skill": {
+				"perception": "+4",
+				"stealth": "+5",
+				"survival": "+4"
+			},
+			"trait": [
+				{
+					"name": "Suprise Attack (Recharges on a short or long rest)",
+					"entries": [
+						"If the gloom stalker surprises a creature and hits it with an attack on the first turn of combat, the target takes an additional 9 ({@damage 2d8}) damage from the attack."
+					]
+				},
+				{
+					"name": "Umbral Shroud",
+					"entries": [
+						"While in darkness, the gloom stalker is {@condition invisible} to any creature that relies on darkvision to see it in that darkness."
+					]
+				},
+				{
+					"name": "Vanish",
+					"entries": [
+						"The gloom stalker can take the Hide or Disengage action as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"On the first turn of combat, the gloom stalker makes two attacks with its darts."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage in melee plus 5 ({@damage 2d4}) poison damage, or 8 ({@damage 1d4 + 6}) piercing damage plus 5 ({@damage 2d4}) poison damage at range."
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}8 ({@damage 1d4 + 6}) piercing damage plus 5 ({@damage 2d4}) poison damage, and the target must succeed on a {@dc 13} Constitution Saving Throw or become poison by the darts for 1 hour. if the target fails the save by 5 or more, it is also {@condition unconscious} while {@condition poisoned} in this way. the target wakes up if it takes damage or another creature takes an action to shake it awake."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"attachedItems": [
+				"dagger|phb",
+				"dart|phb"
+			],
+			"conditionInflict": [
+				"unconscious"
+			],
+			"reaction": [
+				{
+					"name": "Shadowy Dodge.",
+					"entries": [
+						"When a creature targets the gloom stalker with an attack, the gloom stalker can use its reaction to impose disadvantage on that attack."
+					]
+				}
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
 		}
 	]
 }
