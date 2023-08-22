@@ -37,21 +37,21 @@
 		]
 	},
 	"item": [
-    		{
-        		"name": "Mask of the Shapeshifter",
-        		"wondrous": true,
-        		"source": "IW",
-        		"page": "N/A",
-        		"tier": "major",
-        		"type": "OTH",
-        		"rarity": "rare",
-        		"weight": 2,
-        		"reqAttune": true,
-        		"entries": [
-            			"This mask allows the user to cast {@spell disguise self} at will, and additionally gives expertise on all {@skill deception} checks."
-        		]
-    		}
-		],
+    	{
+        	"name": "Mask of the Shapeshifter",
+        	"wondrous": true,
+        	"source": "IW",
+        	"page": "N/A",
+        	"tier": "major",
+        	"type": "OTH",
+        	"rarity": "rare",
+        	"weight": 2,
+        	"reqAttune": true,
+        	"entries": [
+            		"This mask allows the user to cast {@spell disguise self} at will, and additionally gives expertise on all {@skill deception} checks."
+        	]
+   		}
+	],
 	"spell": [
 		{
 			"name": "Babble",
