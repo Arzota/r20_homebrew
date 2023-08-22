@@ -50,6 +50,26 @@
         	"entries": [
             		"This mask allows the user to cast {@spell disguise self} at will, and additionally gives expertise on all {@skill deception} checks."
         	]
+   		},
+        {
+        	"name": "Mace of Fel Light",
+        	"source": "IntoWonderland",
+        	"page": "N/A",
+        	"tier": "major",
+            "baseItem": "mace|PHB",
+        	"type": "M",
+        	"rarity": "very rare",
+        	"weight": 4,
+        	"reqAttune": true,
+            "weaponCategory": "simple",
+            "dmg1": "1d6",
+            "dmgType": "B",
+            
+        	"entries": [
+            		"You have a +2 bonus to attack and damage rolls made with this magic weapon. The head of the mace seems shaped - at rest - like three relaxed faces. On a critical hit against a creature with a face, an attuned wielder may choose to steal the target's face. This imposes blindness and deafness against the creature in addition to a -2 to Charisma, should they fail a Charisma saving throw verses the wielder's spell save DC.",
+                    "The mace can store up to three faces, each of which being displayed on the head of the weapon. The wielder may choose to wear one of the faces after a one minute ritual, after which point their own face is exchanged with one stored within the mace.",
+                    "In exchange, the wielder not only looks like the victim but gains a +2 in the highest stat that creature possessed. This effect can be maintained for a number of minutes equal to the wielder's proficiency bonus."
+        	]
    		}
 	],
 	"spell": [
