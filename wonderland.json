@@ -46,7 +46,6 @@
         	"type": "OTH",
         	"rarity": "rare",
         	"weight": 2,
-            "source": "IW",
         	"reqAttune": true,
         	"entries": [
             		"This mask allows the user to cast {@spell disguise self} at will, and additionally gives expertise on all {@skill deception} checks."
